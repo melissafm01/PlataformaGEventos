@@ -8,7 +8,7 @@ let sequelize = new Sequelize(
     {
       host:process.env.DB_HOST,
       dialect:'mysql',
-     // logging:console.log//muestra las consultas dentro del server
+     
     }
 );
 

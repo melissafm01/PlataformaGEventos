@@ -1,5 +1,5 @@
 const { DataTypes } = require('sequelize');
-const sequelize = require('../config/dataBase'); // Asegúrate de tener la configuración de tu base de datos en este archivo
+const sequelize = require('../config/dataBase'); 
 
 const Evento = sequelize.define(
   'Evento', 

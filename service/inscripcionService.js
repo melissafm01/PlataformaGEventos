@@ -1,4 +1,4 @@
-// service/inscripcionService.js
+
 const Inscripcion = require('../models/inscripcionModel');
 const Usuario = require('../models/usuarioModel');
 const Evento = require('../models/eventoModel');

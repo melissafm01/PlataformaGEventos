@@ -9,12 +9,15 @@ const NumInscripcionesEventoRoutes = require('./router/NumInscripcionesEventoRou
 const EventoMPopularRoutes = require('./router/EventoMPopularRoutes');
 dotenv.config();
 
+
 app.use(express.json());
+
 app.use('/api/eventos', eventoRoutes);
 app.use('/api/usuarios', usuarioRoutes);
 app.use('/api/inscripciones', inscripcionRoutes);
 app.use('/api/num-inscripciones',NumInscripcionesEventoRoutes );
 app.use('/api/eventoM-popular',EventoMPopularRoutes);
+
 const PORT = process.env.PORT;
 
 // Iniciar servidor y sincronizar base de datos

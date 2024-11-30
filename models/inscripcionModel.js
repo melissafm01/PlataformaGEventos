@@ -34,7 +34,7 @@ const Inscripcion = sequelize.define('Inscripcion', {
 });
 
 // Relacionar los modelos
-Usuario.belongsTo(Inscripcion, { foreignKey: 'usuario_id' });
-Evento.belongsTo(Inscripcion, { foreignKey: 'evento_id' });
+Usuario.hasMany(Inscripcion, { foreignKey: 'usuario_id' });
+Evento.hasMany(Inscripcion, { foreignKey: 'evento_id' });
 
 module.exports = Inscripcion;

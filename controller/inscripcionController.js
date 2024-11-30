@@ -1,4 +1,3 @@
-// controller/inscripcionController.js
 const inscripcionService = require('../service/inscripcionService');
 
 

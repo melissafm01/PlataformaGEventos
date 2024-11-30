@@ -3,7 +3,7 @@ const express = require('express');
 const router = express.Router();
 const inscripcionController = require('../controller/inscripcionController');
 
-// Rutas para inscripciones
+
 router.post('/', inscripcionController.crearInscripcion);
 /*
 {

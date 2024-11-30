@@ -31,7 +31,8 @@ CREATE TABLE Inscripciones (
     FOREIGN KEY (usuario_id) REFERENCES Usuarios(id) ON DELETE CASCADE,
     FOREIGN KEY (evento_id) REFERENCES Eventos(id) ON DELETE CASCADE
 );
-*/
+
+
 
 /*Informe con el número de inscripciones en cada evento*/
 
@@ -49,6 +50,7 @@ ORDER BY
     numero_de_inscripciones DESC;
 
 
+
 /* Eventos más populares*/
 
 SELECT 
@@ -63,5 +65,5 @@ GROUP BY
     e.id
 ORDER BY 
     numero_de_inscripciones DESC
-LIMIT 5;  -- O el número de eventos populares que desees
+LIMIT 5;  -- O el número de eventos populares se deseen 
 
