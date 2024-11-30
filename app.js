@@ -4,7 +4,7 @@ const dotenv = require('dotenv');
 const sequelize = require('./config/dataBase');
 const eventoRoutes = require('./router/eventoRoutes');
 const usuarioRoutes = require('./router/usuarioRoutes');
-const inscripcionRoutes = require('./router/inscripcionRoutes'); // Importar las rutas de inscripciones
+const inscripcionRoutes = require('./router/inscripcionRoutes'); 
 const NumInscripcionesEventoRoutes = require('./router/NumInscripcionesEventoRoutes');
 const EventoMPopularRoutes = require('./router/EventoMPopularRoutes');
 dotenv.config();
@@ -20,7 +20,7 @@ app.use('/api/eventoM-popular',EventoMPopularRoutes);
 
 const PORT = process.env.PORT;
 
-// Iniciar servidor y sincronizar base de datos
+
 let startDB = async() => {
   try {
     await sequelize.sync();

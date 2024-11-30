@@ -33,7 +33,7 @@ const Inscripcion = sequelize.define('Inscripcion', {
   timestamps: true
 });
 
-// Relacionar los modelos
+
 Usuario.hasMany(Inscripcion, { foreignKey: 'usuario_id' });
 Evento.hasMany(Inscripcion, { foreignKey: 'evento_id' });
 
